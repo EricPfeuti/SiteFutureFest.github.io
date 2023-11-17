@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="curiosidades.css">
+    <link rel="icon" href="img/Logo 1 (1).png" type="image/x-icon">
+    <title>Preservação ao Meio Ambiente com Tecnologia</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/Logo 1 (1).png" alt="">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="loading3.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="loading.html" class="nav-link">Curiosidades</a></li>
+                    <li class="nav-item"><a href="loading2.html" class="nav-link">Equipe</a></li>
+                </ul>
+            </div>
+            
+            <div class="info-button">
+                <button><a href="problemas.html">Problemas</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="img/🦆 icon _menu_ (2).png" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="loading3.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="loading.html" class="nav-link">Curiosidades</a></li>
+                <li class="nav-item"><a href="loading2.html" class="nav-link">Equipe</a></li>
+            </ul>
+            
+            <div class="info-button">
+                <button><a href="problemas.html">Problemas</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Curiosidades</h1>
+            <div class="curiosidades">
+                <img src="img/Imagem1.png" class="Imagem1">
+                <div class="texto">
+                    <h1 class="titulo">Árvores Inteligentes:</h1>
+                    <p>As árvores têm a capacidade de se comunicar entre si. Através de uma rede de fungos chamada micorriza, árvores compartilham nutrientes e informações sobre pragas.</p>
+                </div>
+            </div>
+            <div class="curiosidades">
+                <img src="img/Imagem2.png" class="Imagem2">
+                <div class="texto">
+                    <h1 class="titulo">Corais e recifes:</h1>
+                    <p>Apesar de cobrir apenas uma pequena fração dos oceanos, os recifes de coral sustentam cerca de um quarto de todas as formas de vida marinha, tornando-os vitais para a saúde dos oceanos.</p>
+                </div>
+            </div>
+            <div class="curiosidades">
+                <img src="img/Img3.png" class="Imagem3">
+                <div class="texto">
+                    <h1 class="titulo">A rocha que respira:</h1>
+                    <p>O basalto, um tipo de rocha vulcânica, tem a capacidade de "respirar" absorvendo dióxido de carbono da atmosfera.</p>
+                </div>
+            </div>
+    
+            
+    </main>
+</body>
+</html>
+<script>
+    function menuShow(){
+        let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')){
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "img/🦆 icon _menu_ (2).png"
+            } else{
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "img/🦆 icon _x letter_.png"
+            }
+
+        }
+
+</script>

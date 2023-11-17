@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="problemas.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="icon" href="img/Logo 1 (1).png" type="image/x-icon">
+    <title>Preservação ao Meio Ambiente com Tecnologia</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/Logo 1 (1).png" alt="">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="loading3.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="loading.html" class="nav-link">Curiosidades</a></li>
+                    <li class="nav-item"><a href="loading2.html" class="nav-link">Equipe</a></li>
+                </ul>
+            </div>
+            
+            <div class="info-button">
+                <button><a href="problemas.html">Problemas</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="img/🦆 icon _menu_ (2).png" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="loading3.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="loading.html" class="nav-link">Curiosidades</a></li>
+                <li class="nav-item"><a href="loading2.html" class="nav-link">Equipe</a></li>
+            </ul>
+            
+            <div class="info-button">
+                <button><a href="problemas.html">Problemas</a></button>
+            </div>
+        </div>
+    </header>
+        <main class="main">
+            <div class="container">
+                <div class="card">
+                    <div class="image">
+                        <img src="img/Icon 1.png" alt="">
+                    </div>
+                    <h1>Ampliação de Áreas</h1>
+                    <div class="content">
+                        <a href="problema1.html">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/Icon 2.png" alt="">
+                    </div>
+                    <h1>Áreas Contaminadas</h1>
+                    <div class="content">
+                        <a href="problema2.html">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/Icon 3.png" alt="">
+                    </div>
+                    <h1>Processo de Urbanização</h1>
+                    <div class="content">
+                        <a href="problema3.html">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/Icon 4.png" alt="">
+                    </div>
+                    <h1>A exploração de Minérios</h1>
+                    <div class="content">
+                        <a href="problema4.html">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/Icon 5.png" alt="">
+                    </div>
+                    <h1>Metódo Agrícola com Queimada</h1>
+                    <div class="content">
+                        <a href="problema5.html">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/Icon 6.png" alt="">
+                    </div>
+                    <h1>A extração Ilegal da Madeira</h1>
+                    <div class="content">
+                        <a href="problema6.html">Saiba Mais</a>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        
+</body>
+
+    <script>
+        function menuShow(){
+            let menuMobile = document.querySelector('.mobile-menu');
+                if (menuMobile.classList.contains('open')){
+                    menuMobile.classList.remove('open');
+                    document.querySelector('.icon').src = "img/🦆 icon _menu_ (2).png"
+                } else{
+                    menuMobile.classList.add('open');
+                    document.querySelector('.icon').src = "img/🦆 icon _x letter_.png"
+                }
+
+            }
+
+        function abrir(){
+            window.location.href=`info.html`
+        }
+    </script>
+</html>

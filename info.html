@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="icon" href="img/Logo 1 (1).png" type="image/x-icon">
+    <title>Preservação ao Meio Ambiente com Tecnologia</title>
+</head>
+<body>
+    <section class="info">
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img src="img/Logo 1 (1).png" alt="">
+                </div>
+
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="loading3.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="loading.html" class="nav-link">Curiosidades</a></li>
+                        <li class="nav-item"><a href="loading2.html" class="nav-link">Equipe</a></li>
+                    </ul>
+                </div>
+                
+                <div class="info-button">
+                    <button><a href="problemas.html">Problemas</a></button>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img src="img/🦆 icon _menu_ (2).png" class="icon"></button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="loading3.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="loading.html" class="nav-link">Curiosidades</a></li>
+                    <li class="nav-item"><a href="loading2.html" class="nav-link">Equipe</a></li>
+                </ul>
+                
+                <div class="info-button">
+                    <button><a href="problemas.html">Problemas</a></button>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <div class="todos">
+                <p class="desmatamento">O que é
+                    <span></span>
+                    <span class="span"> </span>
+                    <span class="colorido">Desmatamento?</span>
+                </p>
+                <div class="arrumacao">
+                    <img src="img/Rectangle 30.png" class="imagem">
+                    <p id="texto">
+                    O desmatamento refere-se à remoção deliberada e extensiva de florestas e vegetação natural para diversos fins, como agricultura, expansão urbana, mineração e exploração madeireira. Esse processo tem impactos significativos no meio ambiente, contribuindo para a perda de biodiversidade, aumento das emissões de gases de efeito estufa, mudanças climáticas e degradação do solo. <br><br>
+
+                    O desmatamento é uma ameaça global, afetando ecossistemas preciosos e habitats de fauna e flora únicos. Além disso, muitas comunidades indígenas e rurais dependem das florestas para subsistência, e o desmatamento frequentemente prejudica suas fontes de alimento e meios de vida. <br><br>
+
+                    Combater o desmatamento requer a implementação de políticas de conservação, práticas agrícolas sustentáveis, conscientização pública e o desenvolvimento de alternativas econômicas que reduzam a pressão sobre as florestas. A preservação das florestas desempenha um papel fundamental na mitigação das mudanças climáticas e na proteção da biodiversidade.
+                </p>
+            </div>
+            
+        </div>
+            
+        </main>
+
+
+    </section>
+</body>
+<script>
+    function menuShow(){
+        let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')){
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "img/🦆 icon _menu_ (2).png"
+            } else{
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "img/🦆 icon _x letter_.png"
+            }
+
+        }
+
+    function abrir(){
+        window.location.href=`info.html`
+    }
+</script>
+</html>

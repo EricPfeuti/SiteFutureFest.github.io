@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Inria+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Inika&family=Inria+Serif&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inika', serif;
+}
+
+body{
+    background-image: url('img/Problema1Fundo.png');
+}
+
+h1{
+    color: #73A942;
+    font-size: 45px;
+    font-family: 'Inknut Antiqua', serif;
+    text-align: center;
+}
+p{
+    font-size: 26px;
+    font-family: 'Inknut Antiqua', serif;
+    color: white;
+    margin: 40px 0 30px;
+    margin-left: 13px;
+    line-height: 220%;
+}
+img{
+    margin-left: 15px;
+}
+.organização{
+    display: flex;
+    margin-top: 30px;
+}
+.organização img{
+    width: 417px;
+    height: 599px;
+}
+
+
+    @media screen and (max-width:1200px) {
+        .organização img{
+            width: 0;
+            height: 0;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+        
+    }

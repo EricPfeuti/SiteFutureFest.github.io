@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="problema1.css">
+    <link rel="icon" href="img/Logo 1 (1).png" type="image/x-icon">
+    <title>Preservação ao Meio Ambiente com Tecnologia</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/Logo 1 (1).png" alt="">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="loading3.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="loading.html" class="nav-link">Curiosidades</a></li>
+                    <li class="nav-item"><a href="loading2.html" class="nav-link">Equipe</a></li>
+                </ul>
+            </div>
+            
+            <div class="info-button">
+                <button><a href="problemas.html">Problemas</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="img/🦆 icon _menu_ (2).png" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="loading3.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="loading.html" class="nav-link">Curiosidades</a></li>
+                <li class="nav-item"><a href="loading2.html" class="nav-link">Equipe</a></li>
+            </ul>
+            
+            <div class="info-button">
+                <button><a href="problemas.html">Problemas</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Processo de Urbanização</h1>
+        <div class="organização">
+            <img src="img/urbano.png" alt="">
+            <p>O processo de urbanização, embora traga benefícios significativos, também acarreta uma série de desafios. Entre os problemas mais comuns estão o congestionamento do tráfego, a falta de habitação acessível, a poluição ambiental, a desigualdade social e o crescimento desordenado. <br><br>
+
+            Para abordar esses problemas, é essencial investir em infraestrutura de transporte público, regulamentação ambiental rigorosa e políticas de inclusão social. O planejamento urbano bem elaborado, que envolva a comunidade, é fundamental para gerenciar o crescimento urbano. Promover a diversificação econômica, a igualdade de oportunidades e a sustentabilidade ambiental também desempenham um papel crucial em mitigar os desafios da urbanização e criar cidades mais equitativas e habitáveis.</p>
+        </div>
+        
+    </main>
+</body>
+<script>
+    function menuShow(){
+        let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')){
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "img/🦆 icon _menu_ (2).png"
+            } else{
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "img/🦆 icon _x letter_.png"
+            }
+
+        }
+
+</script>
+</html>
