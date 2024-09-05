@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/problema1.css">
+    <link rel="icon" href="../img/Logo 1 (1).png" type="image/x-icon">
+    <title>Preservação ao Meio Ambiente com Tecnologia</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../img/Logo 1 (1).png" alt="">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../pages/loading3.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../pages/loading.html" class="nav-link">Curiosidades</a></li>
+                    <li class="nav-item"><a href="../pages/loading2.html" class="nav-link">Equipe</a></li>
+                </ul>
+            </div>
+            
+            <div class="info-button">
+                <button><a href="../pages/problemas.html">Problemas</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="../img/🦆 icon _menu_ (2).png" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../pages/loading3.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../pages/loading.html" class="nav-link">Curiosidades</a></li>
+                <li class="nav-item"><a href="../pages/loading2.html" class="nav-link">Equipe</a></li>
+            </ul>
+            
+            <div class="info-button">
+                <button><a href="../pages/problemas.html">Problemas</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>A extração ilegal da madeira</h1>
+        <div class="organização">
+            <img src="img/madeira.png" alt="">
+            <p>A extração ilegal de madeira é um sério problema ambiental e econômico. Essa prática resulta em desmatamento não sustentável, degradação de ecossistemas florestais e perda de biodiversidade. Além disso, ela alimenta a economia clandestina, prejudicando a indústria madeireira legal e os governos que perdem receitas fiscais. <br><br>
+
+            Soluções incluem o fortalecimento da aplicação da lei e o aumento das penalidades para a extração ilegal de madeira. O estabelecimento de sistemas de rastreamento da madeira, certificação e regulamentações mais rigorosas na cadeia de suprimento podem ajudar a controlar a origem da madeira.  </p>
+        </div>
+
+    </main>
+</body>
+<script>
+    function menuShow(){
+        let menuMobile = document.querySelector('.mobile-menu');
+            if (menuMobile.classList.contains('open')){
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "../img/🦆 icon _menu_ (2).png"
+            } else{
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "../img/🦆 icon _x letter_.png"
+            }
+
+        }
+
+</script>
+</html>
